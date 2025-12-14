@@ -1,6 +1,6 @@
 # Chatbot RAG ITS
 
-A Retrieval-Augmented Generation (RAG) chatbot system for ITS (Institut Teknologi Sepuluh Nopember) information.
+A Retrieval-Augmented Generation (RAG) chatbot for ITS (Institut Teknologi Sepuluh Nopember) information.
 
 ## Features
 
@@ -37,20 +37,6 @@ A Retrieval-Augmented Generation (RAG) chatbot system for ITS (Institut Teknolog
    uvicorn main:app --reload
    ```
 
-## Project Structure
-
-- `main.py` - FastAPI web server
-- `config.py` - Configuration settings
-- `src/` - Source code modules
-  - `scrape_pasca.py` - Web scraping functionality
-  - `clean_and_chunk.py` - Document processing
-  - `build_chroma.py` - Vector database setup
-  - `rag_pipeline.py` - RAG implementation
-- `data/` - Data storage (raw and processed)
-- `chroma_db/` - Vector database storage
-- `eval.ipynb` - Evaluation notebook
-- `evaluasi_rag_vs_nonrag_step_by_step.ipynb` - Comparative evaluation
-
 ## API Endpoints
 
 - `GET /` - Web interface
@@ -61,7 +47,3 @@ A Retrieval-Augmented Generation (RAG) chatbot system for ITS (Institut Teknolog
 
 - `OPENAI_API_KEY` - Your OpenAI API key
 - `HF_TOKEN` - Your Hugging Face token
-
-## License
-
-This project is for educational purposes.
